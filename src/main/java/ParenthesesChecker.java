@@ -1,9 +1,10 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Stack;
 
 public class ParenthesesChecker {
     public boolean checkParentheses(String testString) {
-        Deque<Character> stack = new ArrayDeque<>();
+        Stack<Character> stack = new Stack<>();
         for (int i = 0; i < testString.length(); i++) {
             char x = testString.charAt(i);
             if (x == '(' || x == '[' || x == '{') {
